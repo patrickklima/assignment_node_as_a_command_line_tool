@@ -14,6 +14,6 @@ process.stdin.on('data', function(str){
     process.exit();
   } else {
     if(!fs.existsSync(path)) fs.mkdirSync(path);
-    fs.appendFile(path+'/'+filename, str, (err) => {if(err) throw err});
+    fs.appendFile(path+'/'+filename, str, (err) => {if (err) throw err});
   }
 });
